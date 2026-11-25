@@ -9,10 +9,8 @@
 :root{--navy:#102b4e;--blue:#1769aa;--pale:#edf4fb;--ink:#172b43;--muted:#617187}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#eaf1f8,#f8fbff);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);padding:24px 14px}
 .card{max-width:520px;margin:auto;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 18px 55px #102b4e20}
-.hero{background:linear-gradient(135deg,#102b4e,#174f80);color:#fff;text-align:center;padding:24px 24px 24px}
-.brand{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;padding:9px 14px;margin-bottom:18px}
-.brand img{display:block;width:190px;max-width:100%;height:auto}
-.avatar{width:142px;height:142px;object-fit:cover;object-position:center 20%;border-radius:50%;border:5px solid #fff;box-shadow:0 6px 22px #0003}
+.hero{background:linear-gradient(135deg,#102b4e,#174f80);color:#fff;text-align:center;padding:30px 24px 26px}
+.avatar{display:block;width:min(76%,260px);height:290px;object-fit:cover;object-position:center 24%;border-radius:24px;border:5px solid #fff;box-shadow:0 8px 26px #0004;margin:0 auto 18px}
 h1{font-size:25px;line-height:1.2;margin:17px 0 7px}.role{margin:0;color:#dce9f6;font-size:15px}
 .org{font-weight:700;margin:12px 0 3px}.dept{font-size:14px;color:#dce9f6;margin:0}
 .content{padding:24px}.location{text-align:center;color:var(--muted);font-size:14px;margin:0 0 20px}
@@ -23,13 +21,12 @@ a.action.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
 .section h2{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
 .detail{font-size:14px;margin:9px 0;overflow-wrap:anywhere}.detail strong{color:var(--navy)}
 .footer{text-align:center;background:#f4f8fc;color:var(--muted);font-size:12px;padding:15px}
-@media(max-width:380px){.actions{grid-template-columns:1fr}.hero{padding-top:24px}}
+@media(max-width:380px){.actions{grid-template-columns:1fr}.hero{padding-top:24px}.avatar{width:82%;height:280px}}
 </style>
 </head>
 <body>
 <main class="card">
   <header class="hero">
-    <div class="brand"><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_of_Midland_Bank.svg" alt="Midland Bank PLC official logo"></div>
     <img class="avatar" src="shuvo-profile.jpg" alt="Portrait of Sk Hasanuzzaman Shuvo">
     <h1>Sk Hasanuzzaman Shuvo</h1>
     <p class="role">Assistant Officer</p>
@@ -42,12 +39,13 @@ a.action.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
       <a class="action primary" href="tel:+8801521430624">☎ Call</a>
       <a class="action" href="https://wa.me/8801521430624">◉ WhatsApp</a>
       <a class="action" href="mailto:shuvo.cse.engg@gmail.com">✉ Email</a>
-      <a class="action" href="shuvo-contact.vcf" download>＋ Save Contact</a>
+      <a class="action" href="./shuvo-contact.vcf" download="Sk-Hasanuzzaman-Shuvo.vcf" type="text/vcard">＋ Save Contact</a>
     </nav>
     <div class="section">
       <h2>Contact information</h2>
       <p class="detail"><strong>Mobile:</strong> +880 1521-430624</p>
       <p class="detail"><strong>Email:</strong> shuvo.cse.engg@gmail.com</p>
+      <p class="detail">If the contact does not download automatically, open the VCard file and choose <strong>Import to Contacts</strong>.</p>
     </div>
     <div class="section">
       <h2>Professional profile</h2>
